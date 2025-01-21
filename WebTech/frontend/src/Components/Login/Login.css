@@ -1,0 +1,15 @@
+/* Login.css */
+.login-container {
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  }
+  
+  .register-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555; /* You can change the color to your liking */
+  }
+  

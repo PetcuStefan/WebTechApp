@@ -1,0 +1,276 @@
+/* Global body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+.upload-new {
+  color: yellow;
+  font-weight: bold;
+}
+
+.status-final {
+  color: red;
+  font-weight: bold;
+}
+
+.download-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+/* Header styling */
+#ID {
+  background-color: rgb(19, 151, 131);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/* Main layout container */
+.enrollment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Enrollment container for layout */
+.enrollment-container {
+  display: flex;
+  justify-content: space-between; /* Space out left table, center button, and right table */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  gap: 120px; /* Add spacing between elements */
+}
+
+
+.modal2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-content2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: darkred;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: darkred;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.accept-button,
+.deny-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.accept-button {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #218838;
+}
+
+.deny-button {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.deny-button:hover {
+  background-color: #c82333;
+}
+/* Table container styling */
+.table-container {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+}
+
+th {
+  background-color: rgb(19, 151, 131);
+  color: white;
+  text-transform: uppercase;
+}
+
+td {
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background: #333;
+}
+
+tr:hover td {
+  background-color: rgb(19, 151, 131);
+  color: black;
+}
+
+/* Center container for the button */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Styling for the stop session button */
+.stop-session-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.stop-session-button:hover {
+  background-color: #cc0000;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 30px 20px;  /* Increased top padding to push content down */
+  width: 300px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Add responsiveness for mobile screens */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .enrollment-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align all elements */
+    gap: 20px; /* Add spacing between elements */
+  }
+
+  .center-container {
+    order: 1; /* Ensure the button appears first */
+    width: 100%; /* Full width on smaller screens */
+    display: flex;
+    justify-content: center;
+  }
+
+  .table-container {
+    order: 2; /* Place the tables below the button */
+    width: 100%; /* Full width for tables on smaller screens */
+    max-width: 600px; /* Limit the width of the tables */
+  }
+
+  .table-container:last-child {
+    order: 3; /* Ensure the second table is placed last */
+  }
+}

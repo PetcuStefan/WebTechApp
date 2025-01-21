@@ -1,0 +1,15 @@
+.homepageProf-container {
+    padding-top: 60px; /* To give space for the fixed header */
+  }
+#ID {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    
+    z-index: 10; /* Ensures the header stays above other content */
+  }

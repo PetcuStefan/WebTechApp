@@ -1,0 +1,18 @@
+/* Login.css */
+html, body {
+  height: 100%; /* Ensure the body and HTML fill the full viewport */
+  margin: 0; /* Remove default margins */
+}
+.loginProf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .registerProf-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555; /* You can change the color to your liking */
+  }
+  

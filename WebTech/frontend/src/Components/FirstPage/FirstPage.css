@@ -1,0 +1,35 @@
+html, body {
+    height: 100%; /* Ensure the body and HTML fill the full viewport */
+    margin: 0; /* Remove default margins */
+    display: flex; /* Enable Flexbox layout for body */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .firstPage-container {
+    display: flex; /* Enable Flexbox layout */
+    flex-direction: column; /* Arrange content in a column */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Ensure text is centered */
+  }
+  
+  .bt1, .bt2 {
+    margin-top: 10px; /* Add some space between buttons */
+    flex-direction: row; /* Arrange content in a column */
+  }
+  
+  button {
+    padding: 0.6em 1.2em; /* Add padding to buttons */
+    margin: 10px 0; /* Add margin to space out the buttons */
+    color:white; /* Example text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #535bf2; /* Change background color on hover */
+  }
+  

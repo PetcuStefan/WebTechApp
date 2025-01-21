@@ -1,0 +1,153 @@
+/* Global body styling with a clean gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh; /* Ensures it covers the full viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for the main container */
+  .table-container {
+    padding: 30px;
+    border-radius: 16px; /* Smooth rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Elegant shadow effect */
+    max-width: 900px; /* Restrict max width for better readability */
+    background-color: transparent; /* Remove any background */
+    border: 2px solid rgb(19, 151, 131); /* Border around the container */
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px; /* Round table corners */
+    overflow: hidden; /* Hide excess content for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for the table */
+    background: #2b2b2b; /* Dark gray table background */
+    border: 2px solid rgb(19, 151, 131); /* Add solid border around the table */
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center; /* Center-align text for a clean look */
+    font-size: 16px;
+    border: none; /* Remove any ugly borders */
+  }
+  
+  th {
+    background-color: rgb(19, 151, 131); /* Blue-green header */
+    color: white; /* White text */
+    text-transform: uppercase; /* All caps for headers */
+    font-weight: bold;
+  }
+  
+  td {
+    background: #2b2b2b; /* Slightly lighter dark gray for contrast */
+    color: white;
+  }
+  
+  tr:nth-child(even) td {
+    background: #333333; /* Alternating row colors */
+  }
+  
+  tr:hover td {
+    background: rgb(19, 151, 131); /* Subtle neon green hover effect */
+    color: #000; /* Black text when hovering */
+  }
+  
+  /* Styling for available spots */
+  .available-spots {
+    font-weight: bold;
+    color: rgb(19, 151, 131); /* Neon green to make it pop */
+  }
+  
+  /* Header at the top of the page */
+  #ID {
+    background-color: rgb(19, 151, 131); /* Same color as the table */
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Add responsiveness for mobile screens */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+    
+    th, td {
+      padding: 10px;
+    }
+  }
+  /* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to appear above everything */
+}
+
+/* Modal Content */
+.modal-content {
+  background: #2b2b2b;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  max-width: 90%; /* Responsive */
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-button {
+  background-color: rgb(19, 151, 131);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.no-button {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.yes-button:hover {
+  background-color: rgb(15, 130, 110);
+}
+
+.no-button:hover {
+  background-color: #bbb;
+}
+
